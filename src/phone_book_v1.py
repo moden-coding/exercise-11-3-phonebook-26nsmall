@@ -1,8 +1,17 @@
 # Write your solution here
 def search(phonebook):
-    pass
+    name = input("name: ")
+    if name in phonebook:
+        print(f"{phonebook[name]}")
+    else:
+        print("no number")
 
 def add(phonebook):
+    name = input("name: ")
+    number = input("number: ")
+    phonebook[name]=number
+    print("ok!")
+
     pass
 
 def main():
